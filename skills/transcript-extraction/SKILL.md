@@ -45,7 +45,7 @@ python3 -m pip install -U yt-dlp
 ## Primary command
 
 ```bash
-python3 [skill-directory]/scripts/yt_transcript_tool.py "https://www.youtube.com/@[youtuber-name]" --dateafter YYYYMMDD
+python3 [skill-directory]/scripts/yt_transcript_tool.py "https://www.youtube.com/@[youtuber-name]" --dateafter YYYYMMDD --total-limit 10
 ```
 
 ## Recommended examples

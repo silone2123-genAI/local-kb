@@ -421,6 +421,10 @@ def main():
     parser.add_argument("--debug", action="store_true")
 
     parser.add_argument(
+        "--total-limit", type=int, default=None, help="Maximum number of videos to process."
+    )
+
+    parser.add_argument(
         "--yt-dlp-proxy-url",
         default=None,
         help="Explicit proxy URL for yt-dlp, e.g. http://user:pass@host:port or socks5h://user:pass@host:port",
@@ -489,6 +493,10 @@ def main():
         return
 
     for idx, item in enumerate(video_entries, 1):
+        if args.total_limit is not None and idx > args.total_limit:
+            print(f"Reached total limit of {args.total_limit} videos. Stopping.")
+            break
+
         video_url = item["url"]
         title = item["title"]
 
