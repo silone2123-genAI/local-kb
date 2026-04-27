@@ -13,6 +13,7 @@
     - Map code changes to JIRA scope and wiki specifications.
     - Use cutting edge thinking methodology to generate test scenarios from expected behavior changes.
 - AI-Assisted Code Review: Use AI (Claude) for PR reviews (logic validation, edge cases, style).
+- Previewing new React UI components with Storybook
 
 ***
 
