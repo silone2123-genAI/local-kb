@@ -34,12 +34,8 @@
 ### 4. Deployment \& Post-Deployment (Release \& Operate)
 
 - Utilize AI to write Deployment Notes: Generate deployment notes, change logs, and operational runbooks.
-
-***
-
-### 5. Supporting Tools
-
-- Requirements Consolidation: Aggregate inputs from PRDs, support tickets (email/Slack/JIRA), and wiki docs into a unified requirement set/llm wiki - to assist dev support
-- Use log replay to reconstruct real user scenarios in QA and Prod.
+- Supporting Tools:
+  - Requirements Consolidation: Aggregate inputs from PRDs, support tickets (email/Slack/JIRA), and wiki docs into a unified requirement set/llm wiki - to assist dev support
+  - Use log replay to reconstruct real user scenarios in QA and Prod.
 
 ***
