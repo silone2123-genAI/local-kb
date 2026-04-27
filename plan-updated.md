@@ -1,7 +1,7 @@
 ### 1. Requirements \& Planning (Discovery)
 
 - Risk Assessment (Pre-mortem): Run structured pre-mortems using prompts across code, JIRA, and wiki artifacts to surface likely failure points.
-- Clarification \& Gap Analysis: Identify ambiguities, missing edge cases, and conflicting requirements early.
+- Generate PRD (Product Requirement Document) using Claude Skill for internal reference.
   
 ***
 
@@ -28,7 +28,7 @@
 - Knowledge Gap Reduction: Identify unclear system behavior via in-house Video Recordings tool to improve automated testing implementation efficiency. 
 - Bug Reporting \& Repro:
     - Capture video + structured logs for complex issues.
-    - Auto-generate reproducible JIRA tickets with steps, expected vs actual behavior.
+    - Auto-generate reproducible JIRA tickets with steps, expected vs actual behavior and video recording link.
 
 ***
 
