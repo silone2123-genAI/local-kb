@@ -1,22 +1,44 @@
-**1. Requirements & Planning Phase (Discovery)**
-*   **Needs Gathering (PRD/Support):** Help Support Questions/PRD - collect email/slack/JIRA/wiki - consolidated requirements, log replay skill
-*   **Risk Assessment:** Pre-mortem: The pre-mortem prompts (code/jira/wiki - just copy/paste)
+### 1. Requirements \& Planning (Discovery)
 
-**2. Design & Implementation Phase (Building)**
-*   **Impact Analysis:** Impact analysis with Claude code skills:
-    *   branch git tree analysis/
-    *   test scenarios /
-    *   Code changes vs Jira
-*   **Code Review:** AI-powered PR review/
-*   **Process Optimization:** Process improvements
+- Risk Assessment (Pre-mortem): Run structured pre-mortems using prompts across code, JIRA, and wiki artifacts to surface likely failure points.
+- Clarification \& Gap Analysis: Identify ambiguities, missing edge cases, and conflicting requirements early.
+  
+***
 
-**3. Testing & Quality Assurance Phase (Verifying)**
-*   **Test Generation:** AI test code generation (unit test/raptor UI w Meteor recorder/AI exchange sim)
-*   **Performance Check:** View server performance testing
-*   **Knowledge Gaps:** Improve understanding/reduce understanding gaps
-*   **Dependency Tracking:** Track neighbor component releases
-*   **Bug Reporting:** Provide video recordings in complex-steps bug Jiras
-*   **Tooling:** Provide Meteor-Recorder - Video recordings for getting structured json - simply AI test code gen
+### 2. Design \& Implementation (Build)
 
-**4. Deployment & Post-Deployment Phase (Releasing)**
-*   **Documentation:** Documents: create deployment notes
+- Impact Analysis:
+    - Analyze git branches and dependency trees to understand affected components.
+    - Map code changes to JIRA scope and wiki specifications.
+    - Use cutting edge thinking methodology to generate test scenarios from expected behavior changes.
+- AI-Assisted Code Review: Use AI (Claude) for PR reviews (logic validation, edge cases, style).
+
+***
+
+### 3. Testing \& Quality Assurance (Verify)
+
+- Test Generation:
+    - Auto-generate unit and integration tests using Claude Code.
+    - Use tools like Meteor Recorder + AI to convert user flows into structured test cases.
+    - Use AI exchange simulator for automated testing
+- Performance \& Reliability: Build View Server performance testing and monitor latency, throughput, and failure modes.
+- Dependency Tracking: Monitor upstream/downstream component changes and release compatibility.
+- Knowledge Gap Reduction: Identify unclear system behavior and improve documentation/test coverage.
+- Bug Reporting \& Repro:
+    - Capture video + structured logs for complex issues.
+    - Auto-generate reproducible JIRA tickets with steps, expected vs actual behavior.
+
+***
+
+### 4. Deployment \& Post-Deployment (Release \& Operate)
+
+- Utilize AI to write Deployment Notes: Generate deployment notes, change logs, and operational runbooks.
+
+***
+
+### 5. Supporting Tools
+
+- Requirements Consolidation: Aggregate inputs from PRDs, support tickets (email/Slack/JIRA), and wiki docs into a unified requirement set/llm wiki - to assist dev support
+- Use log replay to reconstruct real user scenarios in QA and Prod.
+
+***
